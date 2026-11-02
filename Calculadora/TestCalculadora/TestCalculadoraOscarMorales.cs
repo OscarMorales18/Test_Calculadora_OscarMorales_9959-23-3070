@@ -7,6 +7,19 @@ namespace TestCalculadora
     [TestClass]
     public class TestCalculadoraOscarMorales
     {
+
+        [TestMethod]
+        public void Test_Suma()
+        {
+            //Arrange: incializar las variables
+            int sumando1 = 3;
+            int sumando2 = 5;
+            //Act: ejecucion del metodo a probar
+            int resultado = Calculadora.Calculadora.Suma(sumando1, sumando2);
+            //Assert: compro8acion de los resultados
+            Assert.AreEqual(8, resultado);
+        }
+
         [TestMethod]
         public void Test_Resta()
         {
